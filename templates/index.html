@@ -1,0 +1,71 @@
+<html>
+<head>
+	<title>Car Price Prediction</title>
+</head>
+<body>
+<h1 style="text-align:center">Welcome to Resale Car Price Prediction</h1>
+
+<form action="{{url_for('predict')}}" method="post">
+<!--<div class="form-floating">
+    <label>Name of Car</label>
+    <input type="text" class="form-control" id="floatingInput" placeholder="">
+</div> -->
+<div class="form-floating">
+    <label>Location</label>
+    <input type="text" name="Location" placeholder="">
+</div>
+<div class="form-floating">
+    <label>Model Year</label>
+    <input type="text" name="Model Year" placeholder="">
+</div>
+<div class="form-floating">
+    <label>Kilometers</label>
+    <input type="text" name="Kilometers Driven" placeholder="">
+</div>
+    <div class="form-floating">
+    <label>Fuel Type</label>
+    <input type="text" name="Fuel Type" placeholder="">
+</div>
+<div class="form-floating">
+    <label>Transmission</label>
+    <input type="text" name="Transmission" placeholder="">
+</div>
+<div class="form-floating">
+    <label>Owner Type</label>
+    <input type="text" name="Owner Type" placeholder="">
+</div>
+<div class="form-floating">
+    <label>Mileage (km/l)</label>
+    <input type="text" name="Mileage" placeholder="">
+</div>
+<div class="form-floating">
+    <label>Engine (CC)</label>
+    <input type="text" name="Engine" placeholder="">
+</div>
+<div class="form-floating">
+    <label>Power (bhp)</label>
+    <input type="text" name="Power" placeholder="">
+</div>
+<div class="form-floating">
+    <label>Seats</label>
+    <input type="text" name="Seats" placeholder="">
+</div>
+<div class="form-floating">
+    <button type="submit" class="btn btn-outline-primary btn-lg">Predict</button>
+</div>
+</form>
+        <p style="text-align:center;">{{prediction}}</p>
+</body>
+</html>
+<style type="text/css">
+	.form-floating {
+		margin: 10 auto;
+		width: 300px;
+	}
+
+	.form-floating input{
+        display: inline-block;
+		text-align: left;
+		float: right;
+	}
+</style>
